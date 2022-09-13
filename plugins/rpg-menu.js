@@ -59,6 +59,19 @@ readmore: readMore
 }
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
   
+
+/*const sections = [
+{
+title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀𝙎𝙋𝙇𝙀𝙂𝘼𝘽𝙇𝙀 | 𝘿𝙍𝙊𝙋-𝘿𝙊𝙒𝙉 𝙇𝙄𝙎𝙏`,
+rows: [
+{title: "▪️ 𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 ▪️", description: null, rowId: `${usedPrefix}menu`},
+{title: "▫️ 𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 ▫️", description: null, rowId: `${usedPrefix}allmenu`},
+{title: "▪️ 𝙇𝙞𝙨𝙩𝙖 𝙙𝙚 𝙂𝙧𝙪𝙥𝙤𝙨 ▪️", description: "𝙂𝙍𝙐𝙋𝙊𝙎 𝙀𝙉 𝘿𝙊𝙉𝘿𝙀 𝙂𝘼𝙏𝘼𝘽𝙊𝙏-𝙈𝘿 𝙃𝘼 𝙄𝙉𝙂𝙍𝙀𝙎𝘼𝘿𝙊\n𝙂𝙍𝙊𝙐𝙋𝙎 𝙒𝙃𝙀𝙍𝙀 𝙂𝘼𝙏𝘼𝘽𝙊𝙏-𝙈𝘿 𝙃𝘼𝙎 𝙅𝙊𝙄𝙉𝙀𝘿", rowId: `${usedPrefix}listagrupos`},
+{title: "▫️ 𝙀𝙨𝙩𝙖𝙙𝙤 | 𝙎𝙩𝙖𝙩𝙪𝙨 ▫️", description: "𝘾𝙊𝙉𝙊𝘾𝙀 𝙈𝙄 𝙀𝙎𝙏𝘼𝘿𝙊 𝙔 𝙈𝘼𝙎 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊𝙉\n𝙆𝙉𝙊𝙒 𝙈𝙔 𝙎𝙏𝘼𝙏𝙐𝙎 𝘼𝙉𝘿 𝙈𝙊𝙍𝙀 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝙏𝙄𝙊𝙉", rowId: `${usedPrefix}estado`},   
+{title: "▪️ 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙘𝙞𝙤𝙣 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙖 ▪️", description: "𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊𝙉 𝘿𝙀𝙏𝘼𝙇𝙇𝘼𝘿𝘼\n𝘿𝙀𝙏𝘼𝙄𝙇𝙀𝘿 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝙏𝙄𝙊𝙉", rowId: `${usedPrefix}infogata`},    
+{title: "▫️ 𝘾𝙧𝙚𝙖𝙩𝙤𝙧 ▫️", description: "𝙈𝙄 𝘾𝙍𝙀𝘼𝘿𝙊𝙍𝘼\n𝙈𝙔 𝘾𝙍𝙀𝘼𝙏𝙊𝙍", rowId: `${usedPrefix}creadora`},      
+{title: "▪️ 𝙋𝙞𝙣𝙜 ▪️", description: "𝘾𝙊𝙉𝙊𝘾𝙀 𝙈𝙄 𝙑𝙀𝙇𝙊𝘾𝙄𝘿𝘼𝘿\n𝙆𝙉𝙊𝙒 𝙈𝙔 𝙎𝙋𝙀𝙀𝘿", rowId: `${usedPrefix}ping`},    
+]}, ] */
 //let name = await conn.getName(m.sender)
 let pp = './media/menus/Menuvid1.mp4'
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
@@ -68,62 +81,57 @@ let username = conn.getName(who)
 //user.registered = false
 
 let menu = `
-💗 *¡HOLA | HI!* ${username}
-╭━〔 *${wm}* 〕━⬣
-┃⚒️⚒️⚒️⚒️⚒️⚒️⚒️⚒️⚒️
-┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
-┃✪ *NIVEL | LEVEL ➺ ${level}*
-┃✪ *ROL ➺* ${role}
-┃✪ *GATACOINS ➺ $ ${money}*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *FECHA ➺ ${week}, ${date}*
-┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
-┃⚒️⚒️⚒️⚒️⚒️⚒️⚒️⚒️⚒️
-╰━━━━〔 𓃠 *${vs}* 〕━━━━⬣
+╌╌╌───  *Vélɑut* | *Bot*  ───╌╌╌
+*¡Hola! ${username}* ♡
 
-╭━━━━〔 𝙈𝙀𝙉𝙐 𝙍𝙋𝙂 〕━━━━⬣
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🪅 _${usedPrefix}botemporal *enlace* *cantidad*_
-┃🪅 _${usedPrefix}addbot *enlace* *cantidad*_
-┃⚗️➺ _${usedPrefix}pase premium_
-┃⚗️➺ _${usedPrefix}pass premium_
-┃⚗️➺ _${usedPrefix}listapremium | listprem_
-┃⚗️➺ _${usedPrefix}transfer *tipo cantidad @tag*_
-┃⚗️➺ _${usedPrefix}dar *tipo cantidad @tag*_
-┃⚗️➺ _${usedPrefix}enviar *tipo cantidad @tag*_
-┃⚗️➺ _${usedPrefix}balance_
-┃⚗️➺ _${usedPrefix}cartera | wallet_
-┃⚗️➺ _${usedPrefix}experiencia | exp_
-┃⚗️➺ _${usedPrefix}top | lb | leaderboard_
-┃⚗️➺ _${usedPrefix}nivel | level | lvl_
-┃⚗️➺ _${usedPrefix}rol | rango_
-┃⚗️➺ _${usedPrefix}inventario | inventory_
-┃⚗️➺ _${usedPrefix}aventura | adventure_
-┃⚗️➺ _${usedPrefix}caza | cazar | hunt_
-┃⚗️➺ _${usedPrefix}animales_
-┃⚗️➺ _${usedPrefix}alimentos_
-┃⚗️➺ _${usedPrefix}curar | heal_
-┃⚗️➺ _${usedPrefix}buy_
-┃⚗️➺ _${usedPrefix}sell_
-┃⚗️➺ _${usedPrefix}verificar | registrar_
-┃⚗️➺ _${usedPrefix}perfil | profile_
-┃⚗️➺ _${usedPrefix}myns_
-┃⚗️➺ _${usedPrefix}unreg *numero de serie*_
-┃⚗️➺ _${usedPrefix}minardiamantes | minargemas_
-┃⚗️➺ _${usedPrefix}minargatacoins | minarcoins_
-┃⚗️➺ _${usedPrefix}minarexperiencia | minarexp_
-┃⚗️➺ _${usedPrefix}minar *:* minar2 *:* minar3_
-┃⚗️➺ _${usedPrefix}reclamar | regalo | claim_
-┃⚗️➺ _${usedPrefix}cadahora | hora | hourly_
-┃⚗️➺ _${usedPrefix}cadasemana | semanal | weekly_
-┃⚗️➺ _${usedPrefix}cadames | mes | monthly_
-┃⚗️➺ _${usedPrefix}cofre | abrircofre | coffer_
-┃⚗️➺ _${usedPrefix}trabajar | work_
-╰━━━━━━━━━━━━━━━━⬣`.trim()
-conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
-['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
-['𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 | 𝙄𝙣𝙫𝙚𝙣𝙩𝙤𝙧𝙮 🎒', '/inventario'],
-['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
+┌──────────────────┐
+ ─ ۰ *EXPERIENCIA | EXP ➺ ${exp}*
+ ─ ۰ *NIVEL | LEVEL ➺ ${level}*
+ ─ ۰ *ROL ➺* ${role}
+ ─ ۰ *VÉLAUTCOINS ➺ $ ${money}*
+ ─ ۰ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
+└──────────────────┘
+
+── ▪️ *RPG | MENÚS*
+┌──────────────────┐
+ ─ ۰ _${usedPrefix}botemporal *enlace* *cantidad*_
+ ─ ۰ _${usedPrefix}addbot *enlace* *cantidad*_
+ ─ ۰ _${usedPrefix}pase premium_
+ ─ ۰ _${usedPrefix}pass premium_
+ ─ ۰ _${usedPrefix}listapremium | listprem_
+ ─ ۰ _${usedPrefix}transfer *tipo cantidad @tag*_
+ ─ ۰ _${usedPrefix}dar *tipo cantidad @tag*_
+ ─ ۰ _${usedPrefix}enviar *tipo cantidad @tag*_
+ ─ ۰ _${usedPrefix}balance_
+ ─ ۰ _${usedPrefix}cartera | wallet_
+ ─ ۰ _${usedPrefix}experiencia | exp_
+ ─ ۰ _${usedPrefix}top | lb | leaderboard_
+ ─ ۰ _${usedPrefix}nivel | level | lvl_
+ ─ ۰ _${usedPrefix}rol | rango_
+ ─ ۰ _${usedPrefix}inventario | inventory_
+ ─ ۰ _${usedPrefix}aventura | adventure_
+ ─ ۰ _${usedPrefix}caza | cazar | hunt_
+ ─ ۰ _${usedPrefix}animales_
+ ─ ۰ _${usedPrefix}alimentos_
+ ─ ۰ _${usedPrefix}curar | heal_
+ ─ ۰ _${usedPrefix}minardiamantes | minargemas_
+ ─ ۰ _${usedPrefix}minargatacoins | minarcoins_
+ ─ ۰ _${usedPrefix}minarexperiencia | minarexp_
+ ─ ۰ _${usedPrefix}minar *:* minar2 *:* minar3_
+ ─ ۰ _${usedPrefix}buy_
+ ─ ۰ _${usedPrefix}sell_
+ ─ ۰ _${usedPrefix}verificar | registrar_
+ ─ ۰ _${usedPrefix}perfil | profile_
+ ─ ۰ _${usedPrefix}myns_
+ ─ ۰ _${usedPrefix}unreg *numero de serie*_
+ ─ ۰ _${usedPrefix}reclamar | regalo | claim_
+ ─ ۰ _${usedPrefix}cofre | abrircofre | coffer_
+ ─ ۰ _${usedPrefix}trabajar | work_
+└──────────────────┘`.trim()
+conn.sendHydrated(m.chat, menu, wm, pp, 'https://velaut.carrd.co', 'Vélaut & co', null, null, [
+['▪️ 𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 ▪️', '.allmenu'],
+['▫️ 𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 ▫️', '/inventario'],
+['▪️ 𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 ▪️', '#menu']
 ], m,)
 }
 
