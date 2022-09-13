@@ -69,69 +69,66 @@ let username = conn.getName(who)
 //user.registered = false
 
 let menu = `
-💗 *¡HOLA | HI!* ${username}
-╭━〔 *${wm}* 〕━⬣
-┃🎠🎠🎠🎠🎠🎠🎠🎠🎠
-┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
-┃✪ *NIVEL | LEVEL ➺ ${level}*
-┃✪ *ROL ➺* ${role}
-┃✪ *GATACOINS ➺ $ ${money}*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *FECHA*
-┃➺ *${week}, ${date}*
-┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
-┃🎠🎠🎠🎠🎠🎠🎠🎠🎠
-╰━━━━〔 𓃠 *${vs}* 〕━━━━⬣
+╌╌╌───  *Vélɑut* | *Bot*  ───╌╌╌
+*¡Hola! ${username}* ♡
 
-╭━〔 𝙅𝙐𝙀𝙂𝙊𝙎 𝘿𝙄𝙉𝘼𝙈𝙄𝘾𝙊𝙎 | 𝙂𝘼𝙈𝙀𝙎 〕⬣
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🎡➺ _${usedPrefix}start_
-┃🎡➺ _${usedPrefix}next_
-┃🎡➺ _${usedPrefix}leave_
-┃🎡➺ _${usedPrefix}mates | matemáticas | math_
-┃🎡➺ _${usedPrefix}ppt *piedra : papel : tijera*_
-┃🎡➺ _${usedPrefix}tictactoe | ttt *sala*_
-┃🎡➺ _${usedPrefix}deltictactoe | delttt_
-┃🎡➺ _${usedPrefix}topgays_
-┃🎡➺ _${usedPrefix}topotakus_
-┃🎡➺ _${usedPrefix}topintegrantes | topintegrante_
-┃🎡➺ _${usedPrefix}toplagrasa | topgrasa_
-┃🎡➺ _${usedPrefix}toppanafrescos | toppanafresco_
-┃🎡➺ _${usedPrefix}topshiposters | topshipost_
-┃🎡➺ _${usedPrefix}toppajeros | toppajer@s_
-┃🎡➺ _${usedPrefix}toplindos | toplind@s_
-┃🎡➺ _${usedPrefix}topput@s_
-┃🎡➺ _${usedPrefix}topfamosos | topfamos@s_
-┃🎡➺ _${usedPrefix}topparejas | top5parejas_
-┃🎡➺ _${usedPrefix}gay | gay *@tag*_
-┃🎡➺ _${usedPrefix}gay2 *nombre : @tag*_
-┃🎡➺ _${usedPrefix}lesbiana *nombre : @tag*_
-┃🎡➺ _${usedPrefix}manca *nombre : @tag*_
-┃🎡➺ _${usedPrefix}manco *nombre : @tag*_
-┃🎡➺ _${usedPrefix}pajero *nombre : @tag*_
-┃🎡➺ _${usedPrefix}pajera *nombre : @tag*_
-┃🎡➺ _${usedPrefix}puto *nombre : @tag*_
-┃🎡➺ _${usedPrefix}puta *nombre : @tag*_
-┃🎡➺ _${usedPrefix}rata *nombre : @tag*_
-┃🎡➺ _${usedPrefix}love *nombre : @tag*_
-┃🎡➺ _${usedPrefix}doxear *nombre : @tag*_
-┃🎡➺ _${usedPrefix}doxxeame_
-┃🎡➺ _${usedPrefix}pregunta *texto*_
-┃🎡➺ _${usedPrefix}apostar | slot *cantidad*_
-┃🎡➺ _${usedPrefix}formarpareja_
-┃🎡➺ _${usedPrefix}dado_
-┃🎡➺ _${usedPrefix}verdad_
-┃🎡➺ _${usedPrefix}reto_
-┃🎡➺ _${usedPrefix}simi | okgoogle *texto*_
-┃🎡➺ _${usedPrefix}alexa | siri | cortana *texto*_
-┃🎡➺ _${usedPrefix}simsimi | bixby *texto*_
-┃🎡➺ _${usedPrefix}multijuegos_
-┃🎡➺ _${usedPrefix}juegos_
-╰━━━━━━━━━━━━━━━━⬣`.trim()
-conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
-['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
-['𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 | 𝙄𝙣𝙫𝙚𝙣𝙩𝙤𝙧𝙮 🎒', '/inventario'],
-['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
+┌──────────────────┐
+ ─ ۰ *EXPERIENCIA | EXP ➺ ${exp}*
+ ─ ۰ *NIVEL | LEVEL ➺ ${level}*
+ ─ ۰ *ROL ➺* ${role}
+ ─ ۰ *VÉLAUTCOINS ➺ $ ${money}*
+ ─ ۰ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
+└──────────────────┘
+
+── ▪️ *FUN | MENÚS*
+┌──────────────────┐
+ ─ ۰ _${usedPrefix}start_
+ ─ ۰ _${usedPrefix}next_
+ ─ ۰ _${usedPrefix}leave_
+ ─ ۰ _${usedPrefix}mates | matemáticas | math_
+ ─ ۰ _${usedPrefix}ppt *piedra : papel : tijera*_
+ ─ ۰ _${usedPrefix}tictactoe | ttt *sala*_
+ ─ ۰ _${usedPrefix}deltictactoe | delttt_
+ ─ ۰ _${usedPrefix}topgays_
+ ─ ۰ _${usedPrefix}topotakus_
+ ─ ۰ _${usedPrefix}topintegrantes | topintegrante_
+ ─ ۰ _${usedPrefix}toplagrasa | topgrasa_
+ ─ ۰ _${usedPrefix}toppanafrescos | toppanafresco_
+ ─ ۰ _${usedPrefix}topshiposters | topshipost_
+ ─ ۰ _${usedPrefix}toppajeros | toppajer@s_
+ ─ ۰ _${usedPrefix}toplindos | toplind@s_
+ ─ ۰ _${usedPrefix}topput@s_
+ ─ ۰ _${usedPrefix}topfamosos | topfamos@s_
+ ─ ۰ _${usedPrefix}topparejas | top5parejas_
+ ─ ۰ _${usedPrefix}gay | gay *@tag*_
+ ─ ۰ _${usedPrefix}gay2 *nombre : @tag*_
+ ─ ۰ _${usedPrefix}lesbiana *nombre : @tag*_
+ ─ ۰ _${usedPrefix}manca *nombre : @tag*_
+ ─ ۰ _${usedPrefix}manco *nombre : @tag*_
+ ─ ۰ _${usedPrefix}pajero *nombre : @tag*_
+ ─ ۰ _${usedPrefix}pajera *nombre : @tag*_
+ ─ ۰ _${usedPrefix}puto *nombre : @tag*_
+ ─ ۰ _${usedPrefix}puta *nombre : @tag*_
+ ─ ۰ _${usedPrefix}rata *nombre : @tag*_
+ ─ ۰ _${usedPrefix}love *nombre : @tag*_
+ ─ ۰ _${usedPrefix}doxear *nombre : @tag*_
+ ─ ۰ _${usedPrefix}doxxeame_
+ ─ ۰ _${usedPrefix}pregunta *texto*_
+ ─ ۰ _${usedPrefix}apostar | slot *cantidad*_
+ ─ ۰ _${usedPrefix}formarpareja_
+ ─ ۰ _${usedPrefix}dado_
+ ─ ۰ _${usedPrefix}verdad_
+ ─ ۰ _${usedPrefix}reto_
+ ─ ۰ _${usedPrefix}simi | okgoogle *texto*_
+ ─ ۰ _${usedPrefix}alexa | siri | cortana *texto*_
+ ─ ۰ _${usedPrefix}simsimi | bixby *texto*_
+ ─ ۰ _${usedPrefix}multijuegos_
+ ─ ۰ _${usedPrefix}juegos_
+└──────────────────┘`.trim()
+conn.sendHydrated(m.chat, menu, wm, pp, 'https://velaut.carrd.co', 'Vélaut & co', null, null, [
+['▪️ 𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 ▪️', '.allmenu'],
+['▫️ 𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 ▫️', '/inventario'],
+['▪️ 𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 ▪️', '#menu']
 ], m,)
 
 }
