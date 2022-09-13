@@ -68,33 +68,30 @@ let username = conn.getName(who)
 //user.registered = false
 
 let menu = `
-💗 *¡HOLA | HI!* ${username}
-╭━〔 *${wm}* 〕━⬣
-┃🎈🎈🎈🎈🎈🎈🎈🎈🎈
-┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
-┃✪ *NIVEL | LEVEL ➺ ${level}*
-┃✪ *ROL ➺* ${role}
-┃✪ *GATACOINS ➺ $ ${money}*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *FECHA*
-┃➺ *${week}, ${date}*
-┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
-┃🎈🎈🎈🎈🎈🎈🎈🎈🎈
-╰━━━━〔 𓃠 *${vs}* 〕━━━━⬣
+╌╌╌───  *Vélɑut* | *Bot*  ───╌╌╌
+*¡Hola! ${username}* ♡
 
-╭━〔 𝙈𝙀𝙉𝙐 𝘿𝙀 𝘽𝙐𝙎𝙌𝙐𝙀𝘿𝘼𝙎 〕━⬣
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🔍➺ _${usedPrefix}animeinfo *texto*_
-┃🔍➺ _${usedPrefix}mangainfo *texto*_
-┃🔍➺ _${usedPrefix}google *texto*_
-┃🔍➺ _${usedPrefix}letra | lirik *texto*_
-┃🔍➺ _${usedPrefix}ytsearch | yts *texto*_
-┃🔍➺ _${usedPrefix}wiki | wikipedia *texto*_
-╰━━━━━━━━━━━━━━━━⬣`.trim()
-conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
-['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
-['𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 | 𝙄𝙣𝙫𝙚𝙣𝙩𝙤𝙧𝙮 🎒', '/inventario'],
-['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
+┌──────────────────┐
+ ─ ۰ *EXPERIENCIA | EXP ➺ ${exp}*
+ ─ ۰ *NIVEL | LEVEL ➺ ${level}*
+ ─ ۰ *ROL ➺* ${role}
+ ─ ۰ *VÉLAUTCOINS ➺ $ ${money}*
+ ─ ۰ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
+└──────────────────┘
+
+── ▪️ *BÚSQUEDAS | MENÚS*
+┌──────────────────┐
+ ─ ۰ _${usedPrefix}animeinfo *texto*_
+ ─ ۰ _${usedPrefix}mangainfo *texto*_
+ ─ ۰ _${usedPrefix}google *texto*_
+ ─ ۰ _${usedPrefix}letra | lirik *texto*_
+ ─ ۰ _${usedPrefix}ytsearch | yts *texto*_
+ ─ ۰ _${usedPrefix}wiki | wikipedia *texto*_
+└──────────────────┘`.trim()
+conn.sendHydrated(m.chat, menu, wm, pp, 'https://velaut.carrd.co', 'Vélaut & co', null, null, [
+['▪️ 𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 ▪️', '.allmenu'],
+['▫️ 𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 ▫️', '/inventario'],
+['▪️ 𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 ▪️', '#menu']
 ], m,)
 }
 
