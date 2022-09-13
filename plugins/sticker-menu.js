@@ -69,50 +69,47 @@ let username = conn.getName(who)
 
 
 let menu = `
-💗 *¡HOLA | HI!* ${username}
-╭━〔 *${wm}* 〕━⬣
-┃🧸🧸🧸🧸🧸🧸🧸🧸🧸 
-┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
-┃✪ *NIVEL | LEVEL ➺ ${level}*
-┃✪ *ROL ➺* ${role}
-┃✪ *GATACOINS ➺ $ ${money}*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *FECHA*
-┃➺ *${week}, ${date}*
-┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
-┃🧸🧸🧸🧸🧸🧸🧸🧸🧸 
-╰━━━━〔 𓃠 *${vs}* 〕━━━━⬣
+╌╌╌───  *Vélɑut* | *Bot*  ───╌╌╌
+*¡Hola! ${username}* ♡
 
-╭━〔 𝙈𝙀𝙉𝙐 𝙎𝙏𝙄𝘾𝙆𝙀𝙍𝙎 𝙔 𝙁𝙄𝙇𝙏𝙍𝙊𝙎 〕⬣
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🎐 _${usedPrefix}sticker | s *imagen o video*_
-┃🎐 _${usedPrefix}sticker | s *url de tipo jpg*_
-┃🎐 _${usedPrefix}emojimix *😺+😆*_
-┃🎐 _${usedPrefix}scircle | círculo *imagen*_
-┃🎐 _${usedPrefix}semoji | emoji *tipo emoji*_
-┃🎐 _${usedPrefix}attp *texto*_
-┃🎐 _${usedPrefix}attp2 *texto*_
-┃🎐 _${usedPrefix}ttp *texto*_
-┃🎐 _${usedPrefix}ttp2 *texto*_
-┃🎐 _${usedPrefix}ttp3 *texto*_
-┃🎐 _${usedPrefix}ttp4 *texto*_
-┃🎐 _${usedPrefix}ttp5 *texto*_
-┃🎐 _${usedPrefix}ttp6 *texto*_
-┃🎐 _${usedPrefix}palmaditas | pat *@tag*_
-┃🎐 _${usedPrefix}bofetada | slap *@tag*_
-┃🎐 _${usedPrefix}besar | kiss *@tag*_
-┃🎐 _${usedPrefix}alimentar | food *@tag*_
-┃🎐 _${usedPrefix}dado_
-┃🎐 _${usedPrefix}wm *packname|author*_
-┃🎐 _${usedPrefix}wm *texto1|texto2*_
-┃🎐 _${usedPrefix}stickermarker *efecto : responder a imagen*_
-┃🎐 _${usedPrefix}stickerfilter *efecto : responder a imagen*_
-┃🎐 _${usedPrefix}cs *:* cs2_
-╰━━━━━━━━━━━━━━━━⬣`.trim()
-conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
-['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
-['𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 | 𝙄𝙣𝙫𝙚𝙣𝙩𝙤𝙧𝙮 🎒', '/inventario'],
-['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
+┌──────────────────┐
+ ─ ۰ *EXPERIENCIA | EXP ➺ ${exp}*
+ ─ ۰ *NIVEL | LEVEL ➺ ${level}*
+ ─ ۰ *ROL ➺* ${role}
+ ─ ۰ *VÉLAUTCOINS ➺ $ ${money}*
+ ─ ۰ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
+└──────────────────┘
+
+── ▪️ *STICKERS - FILTROS | MENÚS*
+┌──────────────────┐
+ ─ ۰ _${usedPrefix}sticker | s *imagen o video*_
+ ─ ۰ _${usedPrefix}sticker | s *url de tipo jpg*_
+ ─ ۰ _${usedPrefix}emojimix *😺+😆*_
+ ─ ۰ _${usedPrefix}scircle | círculo *imagen*_
+ ─ ۰ _${usedPrefix}semoji | emoji *tipo emoji*_
+ ─ ۰ _${usedPrefix}attp *texto*_
+ ─ ۰ _${usedPrefix}attp2 *texto*_
+ ─ ۰ _${usedPrefix}ttp *texto*_
+ ─ ۰ _${usedPrefix}ttp2 *texto*_
+ ─ ۰ _${usedPrefix}ttp3 *texto*_
+ ─ ۰ _${usedPrefix}ttp4 *texto*_
+ ─ ۰ _${usedPrefix}ttp5 *texto*_
+ ─ ۰ _${usedPrefix}ttp6 *texto*_
+ ─ ۰ _${usedPrefix}palmaditas | pat *@tag*_
+ ─ ۰ _${usedPrefix}bofetada | slap *@tag*_
+ ─ ۰ _${usedPrefix}besar | kiss *@tag*_
+ ─ ۰ _${usedPrefix}alimentar | food *@tag*_
+ ─ ۰ _${usedPrefix}dado_
+ ─ ۰ _${usedPrefix}wm *packname|author*_
+ ─ ۰ _${usedPrefix}wm *texto1|texto2*_
+ ─ ۰ _${usedPrefix}stickermarker *efecto : responder a imagen*_
+ ─ ۰ _${usedPrefix}stickerfilter *efecto : responder a imagen*_
+ ─ ۰ _${usedPrefix}cs *:* cs2_
+└──────────────────┘`.trim()
+conn.sendHydrated(m.chat, menu, wm, pp, 'https://velaut.carrd.co', 'Vélaut & co', null, null, [
+['▪️ 𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 ▪️', '.allmenu'],
+['▫️ 𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 ▫️', '/inventario'],
+['▪️ 𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 ▪️', '#menu']
 ], m,)
 }
 
