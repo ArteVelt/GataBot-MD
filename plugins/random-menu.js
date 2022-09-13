@@ -68,76 +68,73 @@ let username = conn.getName(who)
 //user.registered = false
 
 let menu = `
-💗 *¡HOLA | HI!* ${username}
-╭━〔 *${wm}* 〕━⬣
-┃⛩️⛩️⛩️⛩️⛩️⛩️⛩️⛩️⛩️
-┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
-┃✪ *NIVEL | LEVEL ➺ ${level}*
-┃✪ *ROL ➺* ${role}
-┃✪ *GATACOINS ➺ $ ${money}*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *FECHA*
-┃➺ *${week}, ${date}*
-┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
-┃⛩️⛩️⛩️⛩️⛩️⛩️⛩️⛩️⛩️
-╰━━━━〔 𓃠 *${vs}* 〕━━━━⬣
+╌╌╌───  *Vélɑut* | *Bot*  ───╌╌╌
+*¡Hola! ${username}* ♡
 
-╭━〔 𝙍𝘼𝙉𝘿𝙊𝙈 𝙈𝙀𝙈𝙀 | 𝘼𝙉𝙄𝙈𝙀 〕━⬣
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🧩 _${usedPrefix}chica_
-┃🧩 _${usedPrefix}chico_
-┃🧩 _${usedPrefix}cristianoronaldo_
-┃🧩 _${usedPrefix}messi_
-┃🧩 _${usedPrefix}meme_
-┃🧩 _${usedPrefix}itzy_
-┃🧩 _${usedPrefix}blackpink_
-┃🧩 _${usedPrefix}kpop *blackpink : exo : bts*_
-┃🧩 _${usedPrefix}lolivid_
-┃🧩 _${usedPrefix}loli_
-┃🧩 _${usedPrefix}navidad_
-┃🧩 _${usedPrefix}ppcouple_
-┃🧩 _${usedPrefix}neko_
-┃🧩 _${usedPrefix}waifu_
-┃🧩 _${usedPrefix}akira_
-┃🧩 _${usedPrefix}akiyama_
-┃🧩 _${usedPrefix}anna_
-┃🧩 _${usedPrefix}asuna_
-┃🧩 _${usedPrefix}ayuzawa_
-┃🧩 _${usedPrefix}boruto_
-┃🧩 _${usedPrefix}chiho_
-┃🧩 _${usedPrefix}chitoge_
-┃🧩 _${usedPrefix}deidara_
-┃🧩 _${usedPrefix}erza_
-┃🧩 _${usedPrefix}elaina_
-┃🧩 _${usedPrefix}eba_
-┃🧩 _${usedPrefix}emilia_
-┃🧩 _${usedPrefix}hestia_
-┃🧩 _${usedPrefix}hinata_
-┃🧩 _${usedPrefix}inori_
-┃🧩 _${usedPrefix}isuzu_
-┃🧩 _${usedPrefix}itachi_
-┃🧩 _${usedPrefix}itori_
-┃🧩 _${usedPrefix}kaga_
-┃🧩 _${usedPrefix}kagura_
-┃🧩 _${usedPrefix}kaori_
-┃🧩 _${usedPrefix}keneki_
-┃🧩 _${usedPrefix}kotori_
-┃🧩 _${usedPrefix}kurumi_
-┃🧩 _${usedPrefix}madara_
-┃🧩 _${usedPrefix}mikasa_
-┃🧩 _${usedPrefix}miku_
-┃🧩 _${usedPrefix}minato_
-┃🧩 _${usedPrefix}naruto_
-┃🧩 _${usedPrefix}nezuko_
-┃🧩 _${usedPrefix}sagiri_
-┃🧩 _${usedPrefix}sasuke_
-┃🧩 _${usedPrefix}sakura_
-┃🧩 _${usedPrefix}cosplay_
-╰━━━━━━━━━━━━━━━━⬣`.trim()
-conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
-['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
-['𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 | 𝙄𝙣𝙫𝙚𝙣𝙩𝙤𝙧𝙮 🎒', '/inventario'],
-['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
+┌──────────────────┐
+ ─ ۰ *EXPERIENCIA | EXP ➺ ${exp}*
+ ─ ۰ *NIVEL | LEVEL ➺ ${level}*
+ ─ ۰ *ROL ➺* ${role}
+ ─ ۰ *VÉLAUTCOINS ➺ $ ${money}*
+ ─ ۰ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
+└──────────────────┘
+
+── ▪️ *RANDOM - ANIME | MENÚS*
+┌──────────────────┐
+ ─ ۰ _${usedPrefix}chica_
+ ─ ۰ _${usedPrefix}chico_
+ ─ ۰ _${usedPrefix}cristianoronaldo_
+ ─ ۰ _${usedPrefix}messi_
+ ─ ۰ _${usedPrefix}meme_
+ ─ ۰ _${usedPrefix}itzy_
+ ─ ۰ _${usedPrefix}blackpink_
+ ─ ۰ _${usedPrefix}kpop *blackpink : exo : bts*_
+ ─ ۰ _${usedPrefix}lolivid_
+ ─ ۰ _${usedPrefix}loli_
+ ─ ۰ _${usedPrefix}navidad_
+ ─ ۰ _${usedPrefix}ppcouple_
+ ─ ۰ _${usedPrefix}neko_
+ ─ ۰ _${usedPrefix}waifu_
+ ─ ۰ _${usedPrefix}akira_
+ ─ ۰ _${usedPrefix}akiyama_
+ ─ ۰ _${usedPrefix}anna_
+ ─ ۰ _${usedPrefix}asuna_
+ ─ ۰ _${usedPrefix}ayuzawa_
+ ─ ۰ _${usedPrefix}boruto_
+ ─ ۰ _${usedPrefix}chiho_
+ ─ ۰ _${usedPrefix}chitoge_
+ ─ ۰ _${usedPrefix}deidara_
+ ─ ۰ _${usedPrefix}erza_
+ ─ ۰ _${usedPrefix}elaina_
+ ─ ۰ _${usedPrefix}eba_
+ ─ ۰ _${usedPrefix}emilia_
+ ─ ۰ _${usedPrefix}hestia_
+ ─ ۰ _${usedPrefix}hinata_
+ ─ ۰ _${usedPrefix}inori_
+ ─ ۰ _${usedPrefix}isuzu_
+ ─ ۰ _${usedPrefix}itachi_
+ ─ ۰ _${usedPrefix}itori_
+ ─ ۰ _${usedPrefix}kaga_
+ ─ ۰ _${usedPrefix}kagura_
+ ─ ۰ _${usedPrefix}kaori_
+ ─ ۰ _${usedPrefix}keneki_
+ ─ ۰ _${usedPrefix}kotori_
+ ─ ۰ _${usedPrefix}kurumi_
+ ─ ۰ _${usedPrefix}madara_
+ ─ ۰ _${usedPrefix}mikasa_
+ ─ ۰ _${usedPrefix}miku_
+ ─ ۰ _${usedPrefix}minato_
+ ─ ۰ _${usedPrefix}naruto_
+ ─ ۰ _${usedPrefix}nezuko_
+ ─ ۰ _${usedPrefix}sagiri_
+ ─ ۰ _${usedPrefix}sasuke_
+ ─ ۰ _${usedPrefix}sakura_
+ ─ ۰ _${usedPrefix}cosplay_
+╰└──────────────────┘`.trim()
+conn.sendHydrated(m.chat, menu, wm, pp, 'https://velaut.carrd.co', 'Vélaut & co', null, null, [
+['▪️ 𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 ▪️', '.allmenu'],
+['▫️ 𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 ▫️', '/inventario'],
+['▪️ 𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 ▪️', '#menu']
 ], m,)
 }
 
