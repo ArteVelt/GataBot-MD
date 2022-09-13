@@ -84,7 +84,7 @@ rows: [
 {title: "🚀 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙧 𝙍𝙚𝙥𝙤𝙨𝙞𝙩𝙤𝙧𝙞𝙤 | 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙 𝙍𝙚𝙥𝙤𝙨𝙞𝙩𝙤𝙧𝙮 🚀", description: "𝙐𝙎𝘼 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀 𝙍𝙀𝙋𝙊𝙎𝙄𝙏𝙊𝙍𝙄𝙊 𝘿𝙀 𝙂𝙄𝙏𝙃𝙐𝘽\n𝙐𝙎𝙀 𝘼 𝙂𝙄𝙏𝙃𝙐𝘽 𝙍𝙀𝙋𝙊𝙎𝙄𝙏𝙊𝙍𝙔 𝙇𝙄𝙉𝙆", rowId: `${usedPrefix}gitclone`},
 ]}, ] */
 //let name = await conn.getName(m.sender)
-let pp = './media/menus/Menuvid1.mp4'  
+
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
@@ -92,51 +92,48 @@ let username = conn.getName(who)
 //user.registered = false
 
 let menu = `
-💗 *¡HOLA | HI!* ${username}
-╭━〔 *${wm}* 〕━⬣
-┃🪄🪄🪄🪄🪄🪄🪄🪄🪄
-┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
-┃✪ *NIVEL | LEVEL ➺ ${level}*
-┃✪ *ROL ➺* ${role}
-┃✪ *GATACOINS ➺ $ ${money}*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *FECHA*
-┃➺ *${week}, ${date}*
-┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
-┃🪄🪄🪄🪄🪄🪄🪄🪄🪄
-╰━━━━〔 𓃠 *${vs}* 〕━━━━⬣
+╌╌╌───  *Vélɑut* | *Bot*  ───╌╌╌
+*¡Hola! ${username}* ♡
 
-╭━〔 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙎 | 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙎 〕━⬣
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🚀➺ _${usedPrefix}imagen | image *texto*_
-┃🚀➺ _${usedPrefix}pinterest | dlpinterest *texto*_
-┃🚀➺ _${usedPrefix}wallpaper|wp *texto*_
-┃🚀➺ _${usedPrefix}play | play2 *texto o link*_
-┃🚀➺ _${usedPrefix}play.1 *texto o link*_
-┃🚀➺ _${usedPrefix}play.2 *texto o link*_ 
-┃🚀➺ _${usedPrefix}ytmp3 | yta *link*_
-┃🚀➺ _${usedPrefix}ytmp4 | ytv *link*_
-┃🚀➺ _${usedPrefix}tw |twdl | twitter *link*_
-┃🚀➺ _${usedPrefix}facebook | fb *link*_
-┃🚀➺ _${usedPrefix}instagram *link video o imagen*_
-┃🚀➺ _${usedPrefix}verig | igstalk *usuario(a)*_
-┃🚀➺ _${usedPrefix}ighistoria | igstory *usuario(a)*_
-┃🚀➺ _${usedPrefix}tiktok *link*_
-┃🚀➺ _${usedPrefix}tiktokfoto | tiktokphoto *usuario(a)*_
-┃🚀➺ _${usedPrefix}vertiktok | tiktokstalk *usuario(a)*_
-┃🚀➺ _${usedPrefix}mediafire | dlmediafire *link*_
-┃🚀➺ _${usedPrefix}clonarepo | gitclone *link*_
-┃🚀➺ _${usedPrefix}clima *país ciudad*_
-┃🚀➺ _${usedPrefix}consejo_
-┃🚀➺ _${usedPrefix}morse codificar *texto*_
-┃🚀➺ _${usedPrefix}morse decodificar *morse*_
-┃🚀➺ _${usedPrefix}fraseromantica_
-┃🚀➺ _${usedPrefix}historia_
-╰━━━━━━━━━━━━━━━━⬣`.trim()
-conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
-['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
-['𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 | 𝙄𝙣𝙫𝙚𝙣𝙩𝙤𝙧𝙮 🎒', '/inventario'],
-['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
+┌──────────────────┐
+ ─ ۰ *EXPERIENCIA | EXP ➺ ${exp}*
+ ─ ۰ *NIVEL | LEVEL ➺ ${level}*
+ ─ ۰ *ROL ➺* ${role}
+ ─ ۰ *VÉLAUTCOINS ➺ $ ${money}*
+ ─ ۰ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
+└──────────────────┘
+
+── ▪️ *DESCARGAS | MENÚS*
+┌──────────────────┐
+ ─ ۰ _${usedPrefix}imagen | image *texto*_
+ ─ ۰ _${usedPrefix}pinterest | dlpinterest *texto*_
+ ─ ۰ _${usedPrefix}wallpaper|wp *texto*_
+ ─ ۰ _${usedPrefix}play | play2 *texto o link*_
+ ─ ۰ _${usedPrefix}play.1 *texto o link*_
+ ─ ۰ _${usedPrefix}play.2 *texto o link*_ 
+ ─ ۰ _${usedPrefix}ytmp3 | yta *link*_
+ ─ ۰ _${usedPrefix}ytmp4 | ytv *link*_
+ ─ ۰ _${usedPrefix}tw |twdl | twitter *link*_
+ ─ ۰ _${usedPrefix}facebook | fb *link*_
+ ─ ۰ _${usedPrefix}instagram *link video o imagen*_
+ ─ ۰ _${usedPrefix}verig | igstalk *usuario(a)*_
+ ─ ۰ _${usedPrefix}ighistoria | igstory *usuario(a)*_
+ ─ ۰ _${usedPrefix}tiktok *link*_
+ ─ ۰ _${usedPrefix}tiktokfoto | tiktokphoto *usuario(a)*_
+ ─ ۰ _${usedPrefix}vertiktok | tiktokstalk *usuario(a)*_
+ ─ ۰ _${usedPrefix}mediafire | dlmediafire *link*_
+ ─ ۰ _${usedPrefix}clonarepo | gitclone *link*_
+ ─ ۰ _${usedPrefix}clima *país ciudad*_
+ ─ ۰ _${usedPrefix}consejo_
+ ─ ۰ _${usedPrefix}morse codificar *texto*_
+ ─ ۰ _${usedPrefix}morse decodificar *morse*_
+ ─ ۰ _${usedPrefix}fraseromantica_
+ ─ ۰ _${usedPrefix}historia_
+└──────────────────┘`.trim()
+conn.sendHydrated(m.chat, menu, wm, pp, 'https://velaut.carrd.co', 'Vélaut & co', null, null, [
+['▪️ 𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 ▪️', '.allmenu'],
+['▫️ 𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 ▫️', '/inventario'],
+['▪️ 𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 ▪️', '#menu']
 ], m,)
 }
 
