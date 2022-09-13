@@ -68,39 +68,36 @@ let username = conn.getName(who)
 //user.registered = false
 
 let menu = `
-💗 *¡HOLA | HI!* ${username}
-╭━〔 *${wm}* 〕━⬣
-┃🎧🎧🎧🎧🎧🎧🎧🎧🎧
-┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
-┃✪ *NIVEL | LEVEL ➺ ${level}*
-┃✪ *ROL ➺* ${role}
-┃✪ *GATACOINS ➺ $ ${money}*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *FECHA*
-┃➺ *${week}, ${date}*
-┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
-┃🎧🎧🎧🎧🎧🎧🎧🎧🎧
-╰━━━━〔 𓃠 *${vs}* 〕━━━⬣
+╌╌╌───  *Vélɑut* | *Bot*  ───╌╌╌
+*¡Hola! ${username}* ♡
 
-╭━〔 𝙈𝙊𝘿𝙄𝙁𝙄𝘾𝘼𝙍 𝘼𝙐𝘿𝙄𝙊 〕━⬣
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🧰 _${usedPrefix}bass_
-┃🧰 _${usedPrefix}blown_
-┃🧰 _${usedPrefix}deep_
-┃🧰 _${usedPrefix}earrape_
-┃🧰 _${usedPrefix}fast_
-┃🧰 _${usedPrefix}fat_
-┃🧰 _${usedPrefix}nightcore_
-┃🧰 _${usedPrefix}reverse_
-┃🧰 _${usedPrefix}robot_
-┃🧰 _${usedPrefix}slow_
-┃🧰 _${usedPrefix}smooth_
-┃🧰 _${usedPrefix}tupai_
-╰━━━━━━━━━━━━━━━⬣`.trim()
-conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
-['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
-['𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 | 𝙄𝙣𝙫𝙚𝙣𝙩𝙤𝙧𝙮 🎒', '/inventario'],
-['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
+┌──────────────────┐
+ ─ ۰ *EXPERIENCIA | EXP ➺ ${exp}*
+ ─ ۰ *NIVEL | LEVEL ➺ ${level}*
+ ─ ۰ *ROL ➺* ${role}
+ ─ ۰ *VÉLAUTCOINS ➺ $ ${money}*
+ ─ ۰ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
+└──────────────────┘
+
+── ▪️ *MODIFICAR AUDIO | MENÚS*
+┌──────────────────┐
+ ─ ۰ _${usedPrefix}bass_
+ ─ ۰ _${usedPrefix}blown_
+ ─ ۰ _${usedPrefix}deep_
+ ─ ۰ _${usedPrefix}earrape_
+ ─ ۰ _${usedPrefix}fast_
+ ─ ۰ _${usedPrefix}fat_
+ ─ ۰ _${usedPrefix}nightcore_
+ ─ ۰ _${usedPrefix}reverse_
+ ─ ۰ _${usedPrefix}robot_
+ ─ ۰ _${usedPrefix}slow_
+ ─ ۰ _${usedPrefix}smooth_
+ ─ ۰ _${usedPrefix}tupai_
+└──────────────────┘`.trim()
+conn.sendHydrated(m.chat, menu, wm, pp, 'https://velaut.carrd.co', 'Vélaut & co', null, null, [
+['▪️ 𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 ▪️', '.allmenu'],
+['▫️ 𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 ▫️', '/inventario'],
+['▪️ 𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 ▪️', '#menu']
 ], m,)
 }
 
